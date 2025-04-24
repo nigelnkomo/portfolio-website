@@ -45,8 +45,6 @@ html {
 body {
   font-family: "Satoshi Medium", sans-serif;
   line-height: 2.354rem;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   color: #002203;
   background-color: #F5FCF5;
 }
@@ -171,7 +169,6 @@ button {
   z-index: 1000;
   background-color: rgba(0, 170, 17, 0);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* Safari support */
   border-bottom: 1px solid #cceecf;
 }
 .navbar__logo .logo-link__title {

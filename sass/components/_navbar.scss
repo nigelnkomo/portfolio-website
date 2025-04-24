@@ -9,10 +9,8 @@
     z-index: 1000;
     background-color: $green-500-a00; 
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); /* Safari support */
     border-bottom: 1px solid $green-100; 
 
-  
     &__logo {
       .logo-link__title {
         font-family: 'Mynerve Regular', sans-serif;
