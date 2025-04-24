@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as *;
+
 *,
 *::before,
 *::after {
@@ -15,6 +17,8 @@ body {
   line-height: 2.354rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: $green-900;
+  background-color: $light-green-100;
 }
 
 ul,

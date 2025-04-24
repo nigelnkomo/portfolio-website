@@ -1,6 +1,6 @@
-@use "abstracts/variables";
-@use "base/fonts";
-@use "base/reset";
-@use "components/link-container";
-@use "components/navbar";
-@use "components/hero";
+@use "./abstracts/variables" as *;
+@use "./base/fonts";
+@use "./base/reset";
+@use "./components/link-container";
+@use "./components/navbar";
+@use "./components/hero";

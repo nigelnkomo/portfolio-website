@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as *;
+
 .link-container {
   position: relative;
   display: flex;
@@ -12,7 +14,7 @@
 
   &__bracket {
     position: absolute;
-    color: #00aa11;
+    color: $green-500;
     transition: transform 0.3s ease;
     font-size: inherit;
     line-height: inherit;
@@ -49,21 +51,22 @@
     }
 
     &--cta {
-      color: white;
-      background-color: rgb(0, 170, 17);
+      color: $light-green-100;
+      background-color: $green-500;
       padding: 0 .8rem;
       transition: background-color 0.3s ease, color 0.3s ease;
       animation: pulse 2s infinite;
+      font-weight: 900;
 
       @keyframes pulse {
-        0% { box-shadow: 0 0 0 0 rgba(0, 170, 17, 0.4); }
-        70% { box-shadow: 0 0 0 20px rgba(0, 170, 17, 0); }
-        100% { box-shadow: 0 0 0 0 rgba(0, 170, 17, 0); }
+        0% { box-shadow: 0 0 0 0 $green-500-a40; }
+        70% { box-shadow: 0 0 0 2.4rem $green-500-a00; }
+        100% { box-shadow: 0 0 0 0 $green-500-a00 }
       }
     
       &:hover {
-        background-color: #007f0c;
-        color: #eaffea;
+        background-color: $green-700;
+        color: $green-100;
       }
     }
   }
@@ -77,12 +80,17 @@
   }
 
   @media (max-width: 1200px) {
-    font-size: 2.2rem;
-    line-height: 2.6rem;
-    height: 2.6rem;
-    width: 25rem;
+    font-size: 8.166vmin;
+    line-height: 8.166vmin;
+    height: 8.166vmin;
+    width: 90.56vmin;
 
     &__link {
+      
+      &--projects {
+        font-family: "Mynerve Regular";
+      }
+
       &:active .link__label-up,
       &:active .link__label-down {
         transform: translateY(50%);

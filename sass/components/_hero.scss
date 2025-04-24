@@ -1,0 +1,60 @@
+@use "../abstracts/variables" as *;
+
+.hero {
+    overflow-x: hidden;
+
+    &__title {
+        font-family: "Fraunces";
+        font-size: max(9.971rem, 16cqi);
+        line-height: max(9.06rem, 16cqi);
+        letter-spacing: 0;
+        white-space: nowrap;
+        font-weight: 400;
+    }
+
+    &__marquee {
+        display: flex;
+        margin: 0 auto;
+        margin-top: 4.8rem;
+        margin-bottom: 7.2rem;
+        height: clamp(8.225rem, 21.38vw, 25rem);
+    }
+    
+    &__subtitle {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: clamp(2.138rem, 1.618vw, 2.354rem);
+        font-weight: 700;
+        padding: 0 1.6rem;
+
+        &__feels {
+            font-family: "Mynerve Regular";
+            font-style: italic;
+        }
+
+        &__feels span {
+            color: $green-500;
+        }
+    }
+    
+    &__title span {
+        color: $green-700;
+    }
+    
+    @media (max-width: 500px) {
+        &__subtitle {
+            text-align: left;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__palette {
+            width: clamp(100rem, 1.618vw, 1rem);
+        }
+    }
+}
