@@ -6,15 +6,15 @@
     position: relative;
     z-index: 1000;
     background-color: rgba(255, 255, 255, 0.4); 
-    backdrop-filter: blur(10px); /* applies the blur */
+    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); /* Safari support */
-    border-bottom: 1px solid rgba(93, 93, 93, 0.181); /* optional for elegance */
+    border-bottom: 1px solid rgba(93, 93, 93, 0.181); 
 
   
     &__logo {
       .logo-link__title {
         font-family: 'Mynerve Regular', sans-serif;
-        font-size: clamp(1.6rem, 1.618vw ,2.354rem);
+        font-size: 1.6rem;
         line-height: 5.08rem;
         letter-spacing: 1px;
         text-transform: uppercase;
@@ -25,7 +25,7 @@
       background: none;
       border: none;
       cursor: pointer;
-      display: none;  // Hidden by default (for larger screens)
+      display: none;  
       z-index: 999;
       margin-top: -1rem;
   
@@ -59,7 +59,7 @@
       }
   
       &.active &-icon {
-        background: transparent;  // Make background transparent when active
+        background: transparent;  
   
         &::before {
           transform: rotate(45deg);
@@ -84,17 +84,17 @@
       gap: 1.5rem;
   
       &--primary {
-        flex-direction: row;  // Group for main buttons (e.g. logo, download CV)
+        flex-direction: row;  
       }
   
       &--secondary {
-        flex-direction: row;  // Group for secondary buttons (e.g. Who Am I, Let's get in touch)
+        flex-direction: row; 
       }
     }
   
     @media (max-width: 1200px) {
       &__toggle {
-        display: block;  // Show hamburger icon on smaller screens
+        display: block; 
 
         &.active &-icon {
             &::before,
@@ -110,19 +110,19 @@
         left: 0;
         height: 100vh;
         width: 100vw;
-        background-color: #0a0a0a;  // Dark background for the full-screen menu
+        background-color: #0a0a0a;  
         color: #fff;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 2rem;
-        transform: translateX(-100%);  // Hide menu initially
+        transform: translateX(-100%); 
         opacity: 0;
-        pointer-events: none;  // Prevent interaction when menu is hidden
+        pointer-events: none; 
       }
   
       &__menu.active {
-        transform: translateX(0);  // Show the menu when active
+        transform: translateX(0); 
         opacity: 1;
         pointer-events: auto;
       }
